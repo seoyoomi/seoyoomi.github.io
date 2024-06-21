@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="title-section">    </div>
+
+    <div class="main">
+        <h1>Seo Yoo-Mi<br>
+        profile</h1>
+    </div>
+
+    <div class="workspace">
+        <div class="skill modal-trigger" data-modal-target="modal-skill">
+            <img src="img/skill.jpg" alt="Skill Image" class="workspace-image">
+            <h3>Skill</h3>
+        </div>
+        <div class="project modal-trigger" data-modal-target="modal-project">
+            <img src="img/project.jpg" alt="Project Image" class="workspace-image">
+            <h3>Project</h3>
+        </div>
+        <div class="job modal-trigger" data-modal-target="modal-job">
+            <img src="img/job.jpg" alt="Job Image" class="workspace-image">
+            <h3>Job</h3>
+        </div>
+    </div>
+
+    <!-- 모달 HTML -->
+    <div id="modal-skill" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Skill</h3>
+            <hr>
+            <h5>프로그래밍 언어</h5>
+            <li>C언어</li>
+            <P>
+                프로그래밍실습을 배우며 C언어를 사용하여 프로그래밍의 기본 개념과 데이터 구조를 이해하고 적용함.
+                2-1학기에 프로그래밍 실습을 통해 배운 C언어 기본기를 바탕으로 운영체제, 임베디드 시스템 등에 활용함.
+                또한, 코드를 효율적으로 작성하고 프로그램 성능을 개선하는 방법에 대해 알게 됨
+            </P>
+            <li>파이썬</li>
+            <P>파이썬을 능숙하게 다루기 위해서 연습 중에 있음.
+                파이썬 언어를 이용해 알고리즘 문제를 해결함으로써 파이썬 능력뿐만 아니라 문제 해결 능력과 알고리즘 설계 능력도 향상시키기고 있음. 
+                다양한 난이도의 프로그래밍 문제를 분석하고 해결함으로써 효과적인 코드 작성 기법과 논리적 사고 능력을 꾸준히 개발하고 있음.
+            </P>
+            <li>MySQL</li>
+            <P>
+                모바일 프로그래밍 수업을 통해 데이터 관리를 하는 MySQL을 다룬 바 있음.
+                현재 MySQL을 능숙하게 다루지는 못 하나,
+                이를 보완하기 위해 여름방학 기간동안 한남대학교에서 제공하는 SQLD 비교과 프로그램을 수강할 예정.
+                이 과정을 통해 데이터베이스 관리 능력을 심화시키고 SQL에 대한 이해도를 높여 개발에 있어 보다 효율적으로 데이터를 활용할 수 있는 역량을 갖추고자 함.
+            </P>
+        </div>
+    </div>
+
+    <div id="modal-project" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Project</h3>
+            <hr>
+            <ul>
+                <li id="item1-btn" class="item-button" data-modal-target="item1-modal">
+                    <img src="img/icon1.jpg" alt="" class="item-img">
+                    <p>한피스</p>
+                </li>
+                <li id="item2-btn" class="item-button" data-modal-target="item2-modal">
+                    <img src="img/icon2.jpg" alt="" class="item-img">
+                    <p>애완동물 자동 배식기</p>
+                </li>
+                <li id="item3-btn" class="item-button" data-modal-target="item3-modal">
+                    <img src="img/icon3.jpg" alt="" class="item-img">
+                    <p>큐브위성 캡스톤 디자인</p>
+                </li>
+                <li id="item4-btn" class="item-button" data-modal-target="item4-modal">
+                    <img src="img/icon4.jpg" alt="" class="item-img">
+                    <p>고급프로그래밍 과제</p>
+                </li>
+                <li id="item5-btn" class="item-button" data-modal-target="item5-modal">
+                    <img src="img/icon5.jpg" alt="" class="item-img">
+                    <p>웹스크립트 실습 활용</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Item 1,2,3,4,5 Modal -->
+    <div id="item1-modal" class="modal item-modal">
+        <div class="modal-content">
+            <span class="close item-close">&times;</span>
+            <h4>한피스</h4>
+            <hr>
+            <p class="project-content">
+                만화 원피스를 바탕으로 게임을 제작<br>
+                <br>
+                루피가 바다를 항해해 메리호를 만날 때마다<br>
+                보물상자, 아이템, 전투 중 랜덤으로 이벤트 발생<br>
+                또한 루피의 공격력 랜덤으로 추가<br>
+                <br>
+                루피와 크로커다일의 전투 시<br>
+                루피는 사용자의 입력을 받아 공격, 기모으기의 기능을 수행<br>
+                크로커다일은 공격, 모래로 변신, 여유부리기 중 랜덤으로 컴퓨터가 작동시킴<br>
+                캐릭터가 실행하는 동작에 따라 전투가 진행되며 HP 소모<br>
+                <br>
+                루피와 크로커다일 중 한 캐릭터의 HP가 0 이하가 되면 게임 종료<br><br>
+            </p>
+            <img src="img/한피스.png" alt="" class="responsive-image">
+        </div>
+    </div>
+    
+    <div id="item2-modal" class="modal item-modal">
+        <div class="modal-content">
+            <span class="close item-close">&times;</span>
+            <h4>애완동물 자동 배식기</h4>
+            <hr>
+            <p class = project-content> 
+                임베디드 실습 및 활용 수업시간에 아두이노를 활용한 프로젝트를 진행<br>
+                <br>
+                현대 사회에 1인 가구가 늘어나며 반려동물을 키우는 가구 수가 늘어남<br>
+                하지만 개인 일정이나 바쁜 일상 등으로 반려동물이 혼자 있는 시간이 늘어나고<br>
+                반려동물 케어에 소홀해지는 문제 발생<br>
+                적절한 시간에 식사를 제공하지 못하여<br>
+                반려동물이 불규칙한 생활 습관이 생기는 문제를 해결하고자<br>
+                자동 급식 시스템을 개발<br>
+                <br>
+                기계에 반려동물의 사료를 넣으면<br>
+                사용자가 설정한 시간 간격으로 자동 사료 배급<br>
+                기계 전면에 장착된 LCD 모듈로 다음 지급까지 남은 시간 실시간으로 표시<br>
+                기계 전면에 있는 버튼을 이용해 사용자가 원할 때 수동으로 사료 배급 가능<br>
+                <br>
+                해당 기계 구성 요소인 LCD 모듈, 모터, 버튼 등을 작동하기 위한 아두이노 코딩<br>
+                <br> 
+            </p>
+            <img src="img/자동배식기.jpg" alt="" class="responsive-image">
+
+        </div>
+    </div>
+    <div id="item3-modal" class="modal item-modal">
+        <div class="modal-content">
+            <span class="close item-close">&times;</span>
+            <br>
+            <h4>큐브위성 캡스톤디자인(예정)</h4>
+            <hr>
+            <p class = project-content>캔위성 임무제안서 작성 및 캔위성 제작<br>
+                <br>
+                캔위성(Cansat)이란?<br>
+                인공위성 구성요소를 단순화해 음료수 캔 크기로 구현한 교육용 모사 위성<br>
+                위성의 역할을 모사하는 구조계, 전력계, 데이터처리계, 통신계, 탑재체 등의 기능을 음료수 캔 내에 구현<br>
+                발사 및 임무운용에 필요한 위성구성요소를 매우 단순하게 구성하며<br>
+                과학 로켓이나 기구 등에 의해 고공에서 낙하시켜 실제 위성처럼 운용<br>
+                <br>
+                캔위성은 카메라, LED, 센서 등을 사용하기 때문에 이를 작동하는 아두이노 코딩이 필요<br>
+                <br>
+            </p>
+            <img src="img/Cansat.jpg" alt="" class="responsive-image">
+        </div>
+    </div>
+    <div id="item4-modal" class="modal item-modal">
+        <div class="modal-content">
+            <span class="close item-close">&times;</span>
+            <h4>고급프로그래밍 과제(예정)</h4>
+            <hr>
+            <p class = project-content>2학기에 고급프로그래밍 수강예정<br>
+                고급프로그래밍의 경우 수업 내용을 바탕으로 하나의 프로젝트 제작<br>
+                구조체, 배열 등을 학습한 후 이를 활용한 프로그램 제작 예정<br>
+            </p>
+        </div>
+    </div>
+    <div id="item5-modal" class="modal item-modal">
+        <div class="modal-content">
+            <span class="close item-close">&times;</span>
+            <h4>웹스크립트 실습 활용(예정)</h4>
+            <hr>
+            <p class = project-content>웹스크립트 수업시간에 배운 내용을 바탕으로 실습을 진행<br>
+                실습 내용을 복습하며 이를 응용해 볼 예정<br>
+                이를 깃허브에 정리해 업로드하며 코딩 실력을 키워나갈 예정<br>
+                <br>
+            </p>
+            <img src="img/Myprofile.png" alt="" class="responsive-image">
+            <img src="img/booklist.png" alt="" class="responsive-image">
+        </div>
+    </div>
+
+    <div id="modal-job" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Job</h3>
+            <hr>
+            <h5>프론트엔드 개발자</h5>
+            <img src="img/개발자.jpg" alt="" class="job-img">
+            <P>
+                웹 기술에 대한 깊은 흥미와 사용자 경험을 최적화 할 수 있는 독창적인 솔루션을 제공하고자 함.
+                HTML, CSS, JavaScript 등을 활용하여 효과적이고 사용자 친화적인 웹 인터페이스를 개발하는데 많은 관심을 가지고 있음.
+                이를 통해 사용자와 직접적으로 상호작용하는 소프트웨어 개발의 모든 측면에서 실질적인 기여를 하고자 함.
+                또한 지속적인 학습과 실습을 통해 최신 트렌드에 발맞춰 나가는 프로트엔드 개발자가 되기 위해 노력하고자 함.
+            </P>
+            
+        </div>
+    </div>
+
+    <footer>
+        <p>seoyoomi</p>
+        <p></p>
+        <p>tel.01064397950</p>
+        <p>mail.yoomi1102@naver.com</p>
+    </footer>
+
+    <script src="profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+body {
+    margin: 0;  /* 모든 마진 제거 */
+}
+
+.title-section {
+    display: flex;
+    align-items: center;  /* 자식 요소를 수직 중앙에 배치 */
+    width: 100%;
+    height: 40px;
+    background-color: #e0e0e0;
+    color: black;
+}
+
+.main{
+    position: relative;
+    width: 100%;
+    height: 700;
+    display:block;
+    margin: 0 auto;
+    background-color: #ff8c8c;
+}
+
+.main h1 {
+    text-align:center;
+    margin: 0;
+    padding: 100px;
+    font-size: 100px;
+}
+
+.responsive-image {
+    width: 100%; /* 이미지의 너비를 컨테이너에 맞게 조정 */
+    height: auto;
+    display: block; /* 이미지를 블록 요소로 만들어 줄바꿈을 추가 */
+}
+
+.workspace {
+    display: flex;           /* Flexbox 모델 적용 */
+    justify-content: center; /* 가로 방향에서 아이템들을 중앙 정렬 */
+    align-items: center;     /* 세로 방향에서 아이템들을 중앙 정렬 */
+}
+
+.workspace div img {
+    width: 70%;  /* 이미지의 너비 설정 */
+    height: 70%;  /* 이미지의 높이를 자동으로 조절하여 비율 유지 */
+    border-radius: 50%;
+    display: block; /* 이미지를 블록 레벨 요소로 설정 */
+    object-fit: cover;
+    margin: 10px auto; /* 위아래 마진은 10픽셀, 좌우 마진은 자동으로 설정하여 중앙 정렬 */
+}
+
+.workspace div {
+    flex: 1;                 /* 각 div가 동일한 비율로 공간을 차지하도록 설정 */
+    display: flex;           /* 각 div 내부도 flexbox로 설정 */
+    justify-content: center; /* 각 div 내부의 텍스트를 가로 방향 중앙 정렬 */
+    align-items: center;     /* 각 div 내부의 텍스트를 세로 방향 중앙 정렬 */
+    flex-direction: column;  /* 내부 요소들을 세로 방향으로 쌓음 */
+    padding: 10px;           /* 패딩으로 내부 공간 생성 */
+    border: 1px solid #ccc;  /* 테두리로 시각적 구분 */
+    cursor: pointer;
+    background-color: #e0e0e0;
+}
+
+/* 모달 스타일 */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.item-header {
+    align-self: flex-start; /* h4를 상단에 배치 */
+}
+
+.item-body {
+    display: flex;
+    width: 100%;
+}
+
+.image-container {
+    display: flex;
+    align-items: center; /* 중앙 정렬 */
+    justify-content: center; /* 수평 중앙 정렬, 필요에 따라 사용 */
+    height: 100%; /* 컨테이너의 높이를 조정해 전체 높이를 사용 */
+    flex: 1; /* flex-grow 속성을 사용해 가능한 많은 공간을 차지하게 함 */
+}
+
+.text-container {
+    flex: 2; /* 텍스트를 오른쪽에 넓게 배치 */
+    padding: 10px;
+}
+
+hr {
+    border: none; /* 기본 테두리 제거 */
+    height: 1.3px; /* 선의 높이 */
+    background-color: #ccc; /* 선의 색상 */
+    margin: 20px 0; /* 위아래 여백 */
+    width: 20%;             /* 선의 너비를 20%로 설정 */
+    margin: 20px auto;      /* 상하 여백 20px, 좌우 자동으로 마진 설정하여 중앙정렬 */
+}
+
+.item-img{
+    border-radius: 50%;
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li p {
+    margin: 0;
+    text-align: center; /* 텍스트 가로 중앙 정렬 */
+}
+
+.project-content {
+    text-align: center;
+}
+
+.job-img{
+    display: block;
+    width: 40%;
+    height: auto;  /* 이미지의 원본 비율을 유지하면서 높이를 자동 조정 */
+    margin: 0 auto; /* 상하 마진 0, 좌우 마진 auto */
+}
+
+.close {
+    position: absolute; /* 절대 위치 설정 */
+    top: 10px; /* 상단에서 10px 떨어진 위치 */
+    right: 10px; /* 우측에서 10px 떨어진 위치 */
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h3 {
+    text-align: center;   /* 텍스트를 가운데 정렬 */
+    margin: 0;            /* 기본 마진 제거 */
+}
+
+h5 {
+    text-align: center;   /* 텍스트를 가운데 정렬 */
+    margin: 0;            /* 기본 마진 제거 */
+}
+
+ul {
+    display: flex;           /* Flexbox를 사용하여 자식 요소들을 가로로 정렬 */
+    list-style: none;        /* 기본 리스트 스타일 제거 */
+    padding: 0;              /* 기본 패딩 제거 */
+    margin: 0;               /* 기본 마진 제거 */
+    justify-content: center; /* 자식 요소들을 가로 방향의 중앙에 정렬 */
+    gap: 10px;               /* 각 항목 사이에 간격 추가 */
+}
+
+li {
+    padding: 5px 10px;       /* 각 항목에 패딩 추가 */
+    cursor: pointer;         /* 마우스 오버시 커서를 포인터로 변경 */
+    flex: 1;
+}
+
+li:hover {
+    background-color: #ccc;  /* 항목 호버 시 배경색 변경 */
+}
+
+/* 아이템 모달에 특화된 추가 스타일 */
+.item-modal .modal-content {
+    width: auto; /* 너비를 자동으로 조정 */
+    max-width: 600px; /* 최대 너비 설정 */
+    min-width: 300px; /* 최소 너비 설정 */
+    padding: 20px; /* 적절한 패딩 추가 */
+    margin: 10% auto; /* 수직 중심에 배치 */
+    border: 1px solid #888; /* 테두리 추가 */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* 약간의 그림자 효과 */
+    background-color: #fff; /* 배경색 설정 */
+    display: flex; /* Flexbox를 사용하여 내부 요소 정렬 */
+    flex-direction: column; /* 요소들을 세로로 배열 */
+    align-items: center; /* 가로축 중앙 정렬 */
+    justify-content: center; /* 세로축 중앙 정렬 */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+}
+
+footer p:first-child {
+    color: yellow;
+    font-weight: bold; /* 굵은 글씨 */
+}
+
+footer p{
+    color: white;
+    margin: 0;
+}
